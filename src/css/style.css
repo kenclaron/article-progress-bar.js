@@ -1,0 +1,44 @@
+body {
+  margin: 0 auto;
+  background-color: #070707;
+}
+
+h1 {
+  color: #f2f2f2;
+  font-family: monospace;
+  font-size: 2.75em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  color: #f2f2f2;
+  font-family: monospace;
+  font-size: 2em;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 256px;
+  margin-bottom: 256px;
+}
+
+.lorem {
+  color: #323232;
+  font-size: 2em;
+  text-align: justify;
+  margin-left: 32px;
+  margin-right: 32px;
+  max-width: 720px;
+  position: relative;
+  left: 50%;
+  transform: translateX(calc(-50% - 32px));
+}
+
+@media (max-device-width: 512px) {
+  p {
+    font-size: 1em;
+  }
+  .lorem {
+    font-size: 1em;
+    max-width: 420px;
+  }
+}

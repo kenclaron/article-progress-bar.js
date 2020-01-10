@@ -1,0 +1,19 @@
+{
+  "name": "article-scrollbar",
+  "version": "1.0.0",
+  "description": "Vanilla JavaScript article top custom scrollbar for website.",
+  "main": "dist/article-scrollbar.js",
+  "keywords": [
+    "article",
+    "custom",
+    "scrollbar",
+    "html",
+    "css",
+    "javascript",
+    "js",
+    "web",
+    "front-end"
+  ],
+  "author": "KenClaron",
+  "license": "MIT"
+}

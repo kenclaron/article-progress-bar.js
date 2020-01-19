@@ -1,8 +1,8 @@
-# Article-Scrollbar.js
+# Article-Progress-Bar.js
 
-> Vanilla JavaScript article top custom scrollbar for website.
+> Vanilla JavaScript article top custom progress bar for website.
 
-[Website for preview](http://kenclaron.ru) (On this website Mobile-Scrollbar.js worked only on phones)
+[Website for preview](http://kenclaron.ru) (on this website Article-Progress-Bar.js worked only on phones)
 
 ## Table of contents
 - [Features](#features)
@@ -16,14 +16,15 @@
 ## Features
 
 - Cross-browser support
+- Desktop and mobile platforms support
 - Supports custom settings (check out the [syntax](#syntax))
 
 ## Main
 
 ```text
 dist/
-├── article-scrollbar.js
-└── article-scrollbar.min.js   (compressed)
+├── article-progress-bar.js
+└── article-progress-bar.min.js   (compressed)
 ```
 
 ## Getting Started
@@ -31,13 +32,13 @@ dist/
 ### Installation
 
 ```
-npm install article-scrollbar.js
+npm install article-progress-bar.js
 ```
 
 In browser:
 
 ```html
-<script src="/path/to/article-scrollbar.js"></script>
+<script src="/path/to/article-progress-bar.js"></script>
 ```
 
 ### Usage
@@ -45,7 +46,7 @@ In browser:
 #### Syntax
 
 ```js
-new ArticleScrollbar(mobile, heightActive, heightContainer, colorActive, colorContainer);
+new ArticleProgressBar(mobile, heightActive, heightContainer, colorActive, colorContainer);
 ```
 
 - **mobile** (optional)
@@ -71,12 +72,12 @@ new ArticleScrollbar(mobile, heightActive, heightContainer, colorActive, colorCo
 #### Example
 
 ```js
-new ArticleScrollbar();
+new ArticleProgressBar();
 ```
 
 ## License
 
-The Article-Scrollbar.js licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Article-Progress-Bar.js licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 ## Browser support
 
@@ -90,11 +91,11 @@ The Article-Scrollbar.js licensed under the [MIT license](https://opensource.org
 
 > You can express your gratitude by clicking on one of the links
 
-- [Personal Website](http://kenclaron.ru)
+- [Personal website](http://kenclaron.ru)
 - [Telegram](http://t.me/joinchat/AAAAAFZA0MAQ_0nopQKN_A)
 - [VK](https://vk.com/club190729942)
 
 
 ___________________________________
 
-[⬆ back to top](#table-of-contents)
+[↑ back to top](#table-of-contents)

@@ -1,5 +1,5 @@
 /****************************\
-| Article Scrollbar           |
+| Article Progress Bar       |
 | version: 1.0               |
 |                            |
 | author: KenClaron          |
@@ -7,12 +7,12 @@
 | mail: kenclaron@gmail.com  |
 \****************************/
 
-console.info("[article-scrollbar.js] Version - 1.0");
+console.info("[article-progress-bar.js] Version - 1.0");
 
-class ArticleScrollbar {
+class ArticleProgressBar {
   /**
    * Initializes and creates a scrollbar object in a document
-   * @param {String} heightActive Height of active element (default: 4%)
+   * @param {String} heightActive Height of active element (default: 100%)
    * @param {String} heightContainer Height of container element (default: 4px)
    * @param {String} colorActive Color of active element (default: #f23232)
    * @param {String} colorContainer Color of container element (default: #f2f2f2)
@@ -42,9 +42,9 @@ class ArticleScrollbar {
   {
     // Objects initialization
     let container = document.createElement("div");
-    container.id = "mobile-scrollbar-container";
+    container.id = "article-progress-bar-container";
     let active = document.createElement("div");
-    active.id = "mobile-scrollbar-active";
+    active.id = "article-progress-bar-active";
 
     // Styling Objects
     container.style.position = "fixed";
@@ -69,6 +69,12 @@ class ArticleScrollbar {
         window.addEventListener("scroll", function() {
           that.EventScroll(active);
         });
+        window.addEventListener("resize", function() {
+          that.EventScroll(active);
+        });
+        window.addEventListener("orientationchange", function() {
+          that.EventScroll(active);
+        });
         // Creation of objects after full page load 
         window.addEventListener("load", function() {
           that.EventScroll(active);
@@ -83,6 +89,9 @@ class ArticleScrollbar {
     else {
       // For all devices
       window.addEventListener("scroll", function() {
+        that.EventScroll(active);
+      });
+      window.addEventListener("resize", function() {
         that.EventScroll(active);
       });
       // Creation of objects after full page load 
@@ -100,7 +109,7 @@ class ArticleScrollbar {
    * @param {HTMLElement} active Active HTMLElement in container div-HTMLElement
    * @returns {Boolean} true
    */
-  EventScroll(active = document.getElementById("mobile-scrollbar-activity"))
+  EventScroll(active = document.getElementById("article-progress-bar-activity"))
   {
     active.style.width = this.GetScrollPercent() + "%";
     return true;
@@ -114,13 +123,25 @@ class ArticleScrollbar {
     let h = document.documentElement;
     let b = document.body;
 
-    return (h.scrollTop||b.scrollTop) / ((h.scrollHeight||b.scrollHeight) - h.clientHeight) * 100;
+    let perc = (h.scrollTop || b.scrollTop) / ((h.scrollHeight - h.clientHeight || b.scrollHeight - b.clientHeight)) * 100;
+
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      if(window.innerHeight > window.innerWidth) {
+        return perc + (3.25 * perc / 100);
+      }
+      else {
+        return perc + (6 * perc / 100);
+      }
+    }
+    else {
+      return perc;
+    }
   }
 
   Destroy()
   {
-    document.getElementById("mobile-scrollbar-container").remove();
-    document.getElementById("mobile-scrollbar-active").remove();
+    document.getElementById("article-progress-bar-container").remove();
+    document.getElementById("article-progress-bar-active").remove();
 
     return true;
   }

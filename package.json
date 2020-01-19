@@ -1,18 +1,19 @@
 {
-  "name": "article-scrollbar",
+  "name": "article-progress-bar",
   "version": "1.0.0",
   "description": "Vanilla JavaScript article top custom scrollbar for website.",
-  "main": "dist/article-scrollbar.js",
+  "main": "dist/article-progress-bar.js",
   "keywords": [
     "article",
+    "reading",
+    "blog",
     "custom",
-    "scrollbar",
-    "html",
+    "progress",
+    "bar",
+    "scroll",
     "css",
-    "javascript",
     "js",
-    "web",
-    "front-end"
+    "web"
   ],
   "author": "KenClaron",
   "license": "MIT"

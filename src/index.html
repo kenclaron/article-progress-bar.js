@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Article Scrollbar JS</title>
+  <title>Article Progress Bar JS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=0.45, user-scalable=no">
   <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <h1>Article Scrollbar JS</h1>
+  <h1>Article Progress Bar JS</h1>
   <p>Scroll down and look at the top of the screen</p>
   <p>For randomize settings of Article Scrollbar JS, please, reload page</p>
   <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit, augue in ullamcorper facilisis, nisi lacus egestas nisi, ac sagittis ex nulla eget massa. Aenean accumsan consequat magna in rhoncus. Morbi dapibus nulla in mauris finibus, vitae lacinia ligula eleifend. Sed vel elit ante. Praesent porta vel odio vel porttitor. Praesent pharetra nulla non venenatis faucibus. Donec placerat maximus tortor. Quisque eget condimentum est. Phasellus venenatis scelerisque accumsan. Vivamus ut elit rhoncus, faucibus dui ut, scelerisque leo.
@@ -39,7 +39,7 @@
   Quisque elementum porttitor lorem nec laoreet. Vestibulum eget urna ultrices, molestie turpis quis, auctor metus. Vivamus vitae auctor ante. Integer laoreet quam leo, eget ullamcorper quam malesuada at. Aenean ut neque semper, laoreet nunc ac, auctor arcu. Nam eleifend vitae diam id auctor. Pellentesque sed enim laoreet metus dictum dapibus. Proin malesuada, risus quis maximus accumsan, ante mi lobortis magna, quis aliquet diam purus mattis dolor.
   
   Vivamus dolor nulla, convallis viverra augue bibendum, egestas fringilla arcu. Maecenas vitae tempor lorem, vulputate elementum ligula. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas eget dolor lobortis elit ornare blandit. Sed orci turpis, cursus ut efficitur volutpat, condimentum a tellus. Nulla ac pretium nisi. Quisque in libero ante. Aliquam erat volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse varius lacus et dolor interdum aliquet.</p>
-  <script src="./js/article-scrollbar.js"></script>
+  <script src="./js/article-progress-bar.js"></script>
   <script>
 
     let height = Math.floor(Math.random() * 6 + 4);
@@ -47,7 +47,7 @@
     height += "px";
     let color = GetRandomColor();
 
-    var scrollbar = new ArticleScrollbar(false, activeheight, height, color, "#f2f2f2");
+    var scrollbar = new ArticleProgressBar(false, activeheight, height, color, "#f2f2f2");
 
     function GetRandomColor() {
       var letters = '456789AB';

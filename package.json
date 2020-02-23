@@ -1,5 +1,5 @@
 {
-  "name": "article-progress-bar",
+  "name": "article-progress-bar.js",
   "version": "1.0.0",
   "description": "Vanilla JavaScript article top custom scrollbar for website.",
   "main": "dist/article-progress-bar.js",

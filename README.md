@@ -91,8 +91,8 @@ The Article-Progress-Bar.js licensed under the [MIT license](https://opensource.
 
 > You can express your gratitude by clicking on one of the links
 
-- [Personal website](http://kenclaron.ru)
-- [VK](https://vk.com/club190729942) / [Telegram](http://t.me/joinchat/AAAAAFZA0MAQ_0nopQKN_A)
+- [Personal website](https://kenclaron.ru)
+- [VK](https://vk.com/club190729942)
 
 
 ___________________________________

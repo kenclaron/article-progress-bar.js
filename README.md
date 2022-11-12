@@ -2,8 +2,6 @@
 ![npm](https://img.shields.io/npm/dt/article-progress-bar.js)
 > Vanilla JavaScript article top custom progress bar for website.
 
-[Website for preview](http://kenclaron.ru) (on this website Article-Progress-Bar.js worked only on phones)
-
 ## Table of contents
 - [Features](#features)
 - [Getting started](#getting-started)
